@@ -1,347 +1,433 @@
 <!doctype html>
 <html>
-    <head>
-      <meta charset="utf-8">
-      <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-      <title>Status | The Mobile Ethereum Client</title>
-      <meta name="description" content="Status is an interface to access Ethereum, built for Android & iOS. Enjoy encrypted messaging, a cryptocurrency wallet, and seamless access to DApps.">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-      <link rel="icon" type="image/png" href="img/new-site/logo-32.png?v=c45a747" sizes="32x32" />
-      <link rel="icon" type="image/png" href="img/new-site/logo-16.png?v=f5e133c" sizes="16x16" />
+  <title>Status | The Mobile Ethereum Client</title>
+  <meta name="description" content="Status is an interface to access Ethereum, built for Android & iOS. Enjoy encrypted messaging, a cryptocurrency wallet, and seamless access to DApps.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-      <link rel="apple-touch-icon" href="img/new-site/apple-touch-icon-1024.png?v=d12fa2b">
-      <link rel="apple-touch-icon" sizes="76x76" href="img/new-site/apple-touch-icon-76.png?v=aef639f">
-      <link rel="apple-touch-icon" sizes="120x120" href="img/new-site/apple-touch-icon-120.png?v=54157a6">
-      <link rel="apple-touch-icon" sizes="152x152" href="img/new-site/apple-touch-icon-152.png?v=b5d351d">
-      <link rel="apple-touch-icon" sizes="180x180" href="img/new-site/apple-touch-icon-180.png?v=50fbb69">
-      <link rel="mask-icon" href="img/new-site/logo-mask.svg" color="4360DF">
+  <link rel="icon" type="image/png" href="img/new-site/logo-32.png?v=c45a747" sizes="32x32" />
+  <link rel="icon" type="image/png" href="img/new-site/logo-16.png?v=f5e133c" sizes="16x16" />
 
-      <!-- favicon.ico in the root directory -->
-      <link rel="stylesheet" href="css/main.css?v=fd8fd11">
+  <link rel="apple-touch-icon" href="img/new-site/apple-touch-icon-1024.png?v=d12fa2b">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/new-site/apple-touch-icon-76.png?v=aef639f">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/new-site/apple-touch-icon-120.png?v=54157a6">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/new-site/apple-touch-icon-152.png?v=b5d351d">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/new-site/apple-touch-icon-180.png?v=50fbb69">
+  <link rel="mask-icon" href="img/new-site/logo-mask.svg" color="4360DF">
 
-      <meta property="og:title" content="Status, a Mobile Ethereum OS" />
+  <!-- favicon.ico in the root directory -->
+  <link rel="stylesheet" href="css/main.css?v=fd8fd11">
 
-      <!-- Heap Analytics -->
-      <script type="text/javascript">
-        window.heap=window.heap||[],heap.load=function(e,t){window.heap.appid=e,window.heap.config=t=t||{};var r=t.forceSSL||"https:"===document.location.protocol,a=document.createElement("script");a.type="text/javascript",a.async=!0,a.src=(r?"https:":"http:")+"//cdn.heapanalytics.com/js/heap-"+e+".js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(a,n);for(var o=function(e){return function(){heap.push([e].concat(Array.prototype.slice.call(arguments,0)))}},p=["addEventProperties","addUserProperties","clearEventProperties","identify","removeEventProperty","setEventProperties","track","unsetEventProperty"],c=0;c<p.length;c++)heap[p[c]]=o(p[c])};
-        heap.load("1816593697");
-      </script>
-      <!-- /Heap Analytics -->
+  <meta property="og:title" content="Status, a Mobile Ethereum OS" />
 
-    </head>
-    <body>
-      <div class="cookie-popup">
-        <div class="cookie-popup__inner">
-          <p class="cookie-popup-text">Status.im uses cookies to help improve our website</p>
-          <a class="cookie-popup-button" href="#">Accept</a>
+</head>
+
+<body>
+  <div class="cookie-popup">
+    <div class="cookie-popup__inner">
+      <p class="cookie-popup-text">Status.im uses cookies to help improve our website</p>
+      <a class="cookie-popup-button" href="#">Accept</a>
+
+    </div>
+  </div>
+
+  <div class="container-wrap">
+    <div class="container">
+      <div class="slides">
+        <div class="slide slide--one">
+          <div class="slide__inner">
+            <div class="header">
+              <div class="header__inner">
+                <a class="logo" href="/">
+                  <span class="logo__icon"></span>
+                  <div class="logo_text">
+                    <span class="logo__title">Status</span>
+                    <span class="logo__description"><span>A </span>Mobile Ethereum OS</span>
+                  </div>
+                </a>
+
+                <div class="nav">
+                  <a class="nav__item nav__item--features" href="#"><span class="to-hide">How to participate</span></a>
+                  <a class="nav__item nav__item--about" href="https://status.im/">Status Home</a>
+                  <a class="nav__item nav__item--about" target="_blank" href="https://wiki.status.im/">Wiki</a>
+                  <a class="nav__item nav__item--about" target="_blank" href="https://github.com/status-im">Github</a>
+                </div>
+
+                <div class="shares">
+                  <ul class="social-links">
+                    <li class="social-link social-link--fb">
+                      <a href="https://www.facebook.com/ethstatus" target="_blank"></a>
+                    </li>
+                    <li class="social-link social-link--tw">
+                      <a href="https://twitter.com/ethstatus" target="_blank"></a>
+                    </li>
+                    <li class="social-link social-link--rd">
+                      <a href="https://www.reddit.com/r/statusim/" target="_blank"></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="tagline">
+              <h2 class="tagline__title">Let’s take back control of our digital lives, together</h2>
+              <div class="tagline__body">Status is a browser, messenger, and gateway to the decentralized world of Ethereum</div>
+              <div class="tagline__button"><a class="button button--secondary" href="http://slack.status.im/" target="_blank"><span class="button-icon button-icon--slack"></span><span class="button-value">Discuss on Slack</span></a></div>
+            </div>
+
+            <div class="widget-wrap">
+              <div class="widget">
+                <h3>Contribution period</h3>
+
+                <div class="widget-row widget-status">
+                  <h4>Current status</h4>
+                  <div class="widget-placeholder">
+                    <div class="widget-placeholder-inner">
+                      <div class="widget-placeholder-status">Closed</div>
+                      <div class="widget-placeholder-comment">Contribution Period Has Not Started</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="widget-row widget-time">
+                  <h4>Time to start</h4>
+                  <div class="widget-placeholder">
+                    <div class="widget-placeholder-countdown">
+                      <span class="countdown-item"><span class="countdown-value">50</span>&nbsp;days</span>
+                      <span class="countdown-item"><span class="countdown-value">0</span>&nbsp;hours</span>
+                      <span class="countdown-item"><span class="countdown-value">50</span>&nbsp;minutes</span>
+                      <span class="countdown-item"><span class="countdown-value">50</span>&nbsp;seconds</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="widget-column widget-rate">
+                  <h4>Creation rate (fixed)</h4>
+                  <div class="widget-value">10,000 SNT for 1 ETH (fixed)</div>
+                </div>
+
+                <div class="widget-column widget-cap">
+                  <h4>Cap (Soft)</h4>
+                  <div class="widget-value">160,000 ETH</div>
+                </div>
+
+                <div class="widget-button">
+                  <a class="button" href="#">Participate</a>
+                </div>
+
+              </div>
+            </div>
+          </div>
 
         </div>
-      </div>
-
-      <div class="container-wrap">
-      <div class="container">
-        <div class="slides">
-          <div class="slide slide--one">
-            <div class="slide__inner">
-              <div class="header">
-                <div class="header__inner">
-                    <a class="logo" href="/">
-                      <span class="logo__icon"></span>
-                      <div class="logo_text">
-                        <span class="logo__title">Status</span>
-                        <span class="logo__description"><span>A </span>Mobile Ethereum OS</span>
-                      </div>
-                    </a>
-
-                    <div class="nav">
-                      <a class="nav__item nav__item--features" href="#"><span class="to-hide">How to participate</a>
-                      <a class="nav__item nav__item--about" href="#">Status Home</a>
-                      <a class="nav__item nav__item--about" target="_blank" href="https://wiki.status.im/">Wiki</a>
-                      <a class="nav__item nav__item--about" target="_blank" href="https://github.com/status-im">Github</a>
-                    </div>
-
-                    <div class="shares">
-                      <ul class="social-links">
-                        <li class="social-link social-link--fb"><a href="https://www.facebook.com/ethstatus" target="_blank"></a></li>
-                        <li class="social-link social-link--tw"><a href="https://twitter.com/ethstatus" target="_blank"></a></li>
-                        <li class="social-link social-link--rd"><a href="" target="_blank"></a></li>
-                      </ul>
-                  </div>
-                </div>
-              </div>
-
-              <div class="tagline">
-                <h2 class="tagline__title">Let’s take back control of our digital lives, together</h2>
-                <div class="tagline__body">Status is a browser, messenger, and gateway to the decentralized world of Ethereum</div>
-                <div class="tagline__button"><a class="button button--secondary" href="#"><span class="button-icon button-icon--slack"></span><span class="button-value">Discuss on Slack</span></a></div>
-              </div>
-
-              <div class="widget-wrap">
-                <div class="widget">
-                  <h3>Contribution period</h3>
-
-                  <div class="widget-row widget-status">
-                    <h4>Current status</h4>
-                    <div class="widget-placeholder">
-                      <div class="widget-placeholder-inner">
-                        <div class="widget-placeholder-status">Closed</div>
-                        <div class="widget-placeholder-comment">Contribution Period Has Not Started</div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="widget-row widget-time">
-                    <h4>Time to start</h4>
-                    <div class="widget-placeholder">
-                      <div class="widget-placeholder-countdown">
-                        <span class="countdown-item"><span class="countdown-value">50</span>&nbsp;days</span>
-                        <span class="countdown-item"><span class="countdown-value">0</span>&nbsp;hours</span>
-                        <span class="countdown-item"><span class="countdown-value">50</span>&nbsp;minutes</span>
-                        <span class="countdown-item"><span class="countdown-value">50</span>&nbsp;seconds</span>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="widget-column widget-rate">
-                    <h4>Creation rate (fixed)</h4>
-                    <div class="widget-value">10,000 SNT for 1 ETH (fixed)</div>
-                  </div>
-
-                  <div class="widget-column widget-cap">
-                    <h4>Cap (Soft)</h4>
-                    <div class="widget-value">160,000 ETH</div>
-                  </div>
-
-                  <div class="widget-button">
-                    <a class="button" href="#">Participate</a>
-                  </div>
-
-                </div>
-              </div>
-            </div>
-
-          </div>
-          <div class="logos">
-            <a href="#" target="_blank" class="media-logo media-logo--coindesk"></a>
-            <a href="#" target="_blank" class="media-logo media-logo--cointelegraph"></a>
-            <a href="#" target="_blank" class="media-logo media-logo--yahoo"></a>
-            <a href="#" target="_blank" class="media-logo media-logo--ethnews"></a>
-            <a href="#" target="_blank" class="media-logo media-logo--etherreview"></a>
-          </div>
-          <div class="slide slide--two">
-            <div class="slide__inner">
-              <div class="sections">
-                <div class="section-item section-item-left">
-                  <div class="text-section">
-                    <h2>How to participate</h2>
-                    <div class="text">
-                      <p>The Contribution Period will start on 6 June 2016 at 3pm GMT and will end on 27 June 2016 at 3pm GMT, or 24 hours after the soft cap has been reached.</p>
-                      <p>To learn details about how the contribution period contract works please refer to this blog post, and to read more on the Status Network Token model structure please refer to Status Network Whitepaper.</p>
-                      <p>Please be advised that the exact start date is determined by a block number. We will announce the exact block number and contribution period contract address once it’s deployed to the Ethereum network - a day before the start of the Contribution Period.</p>
-                      <p>Sending ETH to the Smart Contract address directly from an exchange will likely result in the loss of your ETH. Do NOT do this. You can instead find tutorials below on how to use Parity, MyEtherWallet or Mist to participate.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="section-item section-item-right">
-                  <div class="participate-image-wrap">
-                    <div class="dot-wrap"><div class="dot dot--white"><div class="dot-icon"></div></div></div>
-                    <div class="dot-wrap"><div class="dot dot--white"><div class="dot-icon"></div></div></div>
-                    <div class="dot-wrap"><div class="dot dot--white"><div class="dot-icon"></div></div></div>
-                    <div class="dot-wrap"><div class="dot dot--white"><div class="dot-icon"></div></div></div>
-                    <div class="dot-wrap"><div class="dot dot--white"><div class="dot-icon"></div></div></div>
-                    <div class="dot-wrap dot-wrap--status"><div class="dot dot--status"><div class="dot-icon"></div></div></div>
-
-                    <div class="tooltip">
-                      <div class="tolltip-triangle"></div>
-                      <h4 class="tooltip-title">Contribution Period</h4>
-                      <div class="tolltip-dates">
-                        6 June 2016 3pm  – 27 June 2016 3pm GMT
-                      </div>
-                      <h4 class="tooltip-title">Resources</h4>
-                      <ul class="tooltip-links">
-                        <li><a href="#">Status Network Whitepaper</a></li>
-                        <li><a href="#">MyEtherWallet Instructions</a></li>
-                        <li><a href="#">Mist Instructions</a></li>
-                        <li><a href="#">Parity Instructions</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="slide slide--three">
-            <div class="slide__inner">
-              <div class="sections">
-                <div class="section-item section-item-left">
-                  <div class="phones-section">
-                    <div class="phones">
-                      <div class="phone-wrap phone-wrap--iphone">
-                        <div class="phone phone--iphone the-iphone">
-                          <div class="the-iphone-dot"></div>
-                          <div class="the-iphone-line"></div>
-                          <div class="the-iphone-screen"></div>
-                          <div class="the-iphone-button"></div>
-                        </div>
-                      </div>
-
-                      <div class="phone-wrap phone-wrap--android">
-                        <div class="phone phone--android the-android">
-                          <div class="the-android-dot"></div>
-                          <div class="the-android-line"></div>
-                          <div class="the-android-screen"></div>
-                          <div class="the-android-button"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="section-item section-item-right">
-                  <div class="text-section">
-                    <h2>What is Status?</h2>
-                    <div class="text">
-                      <p>We’re paving a path towards mass-adoption of Ethereum. Status is the first, and currently the only, mobile Ethereum client built entirely on peer-to-peer technologies. </p>
-                      <p>Status combines a messenger, web 3.0 browser, and a wallet to build a gateway for everyday smartphone users to begin using dApps, and a simple way for dApp developers to reach new users.</p>
-                      <p>If you’d like to try our alpha, Android users try it right now. iOS users need to request an invite via Apple TestFlight from our homepage.</p>
-                      <div class="app-buttons">
-                        <a class="app-button app-button--android" href="#">
-                          <span class="app-button__title">Download Alpha</span>
-                          <span class="app-button__platform">Android</span>
-                          <span class="app-button__icon"></span>
-                        </a>
-                        <a class="app-button app-button--ios" href="#">
-                          <span class="app-button__title">Request TestFlight</span>
-                          <span class="app-button__platform">IOS</span>
-                          <span class="app-button__icon"></span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="slide slide--four">
-            <div class="slide__inner">
-              <div class="sections">
-                <div class="section-item section-item-left">
-                  <div class="text-section">
-                    <h2>The Status Network Token</h2>
-                    <div class="text">
-                      <p>The Status Network Token ('SNT') is created during the contribution period, and serves as a crucial part of the Status Application. Our objective is to create a Users-as-Stakeholders network; where the economic incentives of the platform is to serve the users on the platform.</p>
-                      <p>Given Status is a generalized platform, and possesses a broad range of use-cases and native-DApps that in and of themselves could be powered by a token, SNT takes a modular approach, and serves a number of core functions across the network.</p>
-                      <p>SNT forms the the foundation of our content discovery and ranking systems for Status dApps, powers our network-level Acquisition Engine, is used for our Governance & Proposal system. These are outlined in more depth in our Whitepaper.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="section-item section-item-right section-item-dots">
-                  <div class="dot-wrap"><div class="dot dot--purple"><div class="dot-icon"></div></div></div>
-                  <div class="dot-wrap"><div class="dot dot--pink"><div class="dot-icon"></div></div></div>
-                  <div class="dot-wrap"><div class="dot dot--green"><div class="dot-icon"></div></div></div>
-                  <div class="dot-wrap"><div class="dot dot--blue"><div class="dot-icon"></div></div></div>
-                  <div class="dot-wrap"><div class="dot dot--pink"><div class="dot-icon"></div></div></div>
-                  <div class="dot-wrap"><div class="dot dot--purple"><div class="dot-icon"></div></div></div>
-                  <div class="dot-wrap"><div class="dot dot--green"><div class="dot-icon"></div></div></div>
-                  <div class="dot-wrap"><div class="dot dot--blue"><div class="dot-icon"></div></div></div>
-                  <div class="dot-wrap"><div class="dot dot--purple"><div class="dot-icon"></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="slide slide--five">
-            <div class="slide__inner">
-              <div class="email-section">
-                <div class="email-section__text">
-                  <h2>Get Notified</h2>
+        <div class="logos">
+          <a href="#" target="_blank" class="media-logo media-logo--coindesk"></a>
+          <a href="#" target="_blank" class="media-logo media-logo--cointelegraph"></a>
+          <a href="#" target="_blank" class="media-logo media-logo--yahoo"></a>
+          <a href="#" target="_blank" class="media-logo media-logo--ethnews"></a>
+          <a href="#" target="_blank" class="media-logo media-logo--etherreview"></a>
+        </div>
+        <div class="slide slide--two">
+          <div class="slide__inner">
+            <div class="sections">
+              <div class="section-item section-item-left">
+                <div class="text-section">
+                  <h2>How to participate</h2>
                   <div class="text">
-                    <p>If you’d like to receive updates on the Contribution Period and the launch of the Status Network, please subscribe</p>
+                    <p>The Contribution Period will start on June 17th 2017 at 4pm Zurich time, CEST and will end on 27 June 2017 at 4pm CEST, or 24 hours after the soft cap has been reached.</p>
+                    <p>To learn details about how the contribution period contract works please refer to this blog post, and to read more on the Status Network Token model structure please refer to Status Network Whitepaper.</p>
+                    <p>Please be advised that the exact start date is determined by a block number. We will announce the exact block number and contribution period contract address once it’s deployed to the Ethereum network - a day before the start of the
+                      Contribution Period.</p>
+                    <p>Sending ETH to the Smart Contract address directly from an exchange will likely result in the loss of your ETH. Do NOT do this. You can instead find tutorials below on how to use Parity, MyEtherWallet or Mist to participate.</p>
                   </div>
                 </div>
-                <div class="email-form">
-                  <!-- Mailchimp -->
-                        <form action="//status.us13.list-manage.com/subscribe/post?u=d0c1a0be2adff281b52e27a7f&amp;id=09e2d9ae07" method="post" name="mc-embedded-subscribe-form" id="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                          <div class="email-form__inner">
-                            <input type="email" value="" name="EMAIL" class="required email-input mce-EMAIL email-form__input email-form__input--email" placeholder="Enter your email">
-                            <input type="submit" value="GET UPDATES" name="subscribe" class="button email-form__input email-form__input--sumbit mc-embedded-subscribe button email-button">
-                            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_d0c1a0be2adff281b52e27a7f_09e2d9ae07" tabindex="-1" value=""></div>
-                          </div>
-                          <div id="mce-responses" class="email-form__responces">
-                            <div class="response email-form__error-message" id="mce-error-response"></div>
-                            <div class="email-form__success-message response" id="mce-success-response"></div>
-                          </div>
-                        </form>
-                    <!-- End Mailchimp -->
+              </div>
+              <div class="section-item section-item-right">
+                <div class="participate-image-wrap">
+                  <div class="dot-wrap">
+                    <div class="dot dot--white">
+                      <div class="dot-icon"></div>
+                    </div>
+                  </div>
+                  <div class="dot-wrap">
+                    <div class="dot dot--white">
+                      <div class="dot-icon"></div>
+                    </div>
+                  </div>
+                  <div class="dot-wrap">
+                    <div class="dot dot--white">
+                      <div class="dot-icon"></div>
+                    </div>
+                  </div>
+                  <div class="dot-wrap">
+                    <div class="dot dot--white">
+                      <div class="dot-icon"></div>
+                    </div>
+                  </div>
+                  <div class="dot-wrap">
+                    <div class="dot dot--white">
+                      <div class="dot-icon"></div>
+                    </div>
+                  </div>
+                  <div class="dot-wrap dot-wrap--status">
+                    <div class="dot dot--status">
+                      <div class="dot-icon"></div>
+                    </div>
+                  </div>
+
+                  <div class="tooltip">
+                    <div class="tolltip-triangle"></div>
+                    <h4 class="tooltip-title">Contribution Period</h4>
+                    <div class="tolltip-dates">
+                      17 June 2017 4pm CEST – 27 June 2017 4pm CEST
+                    </div>
+                    <h4 class="tooltip-title">Resources</h4>
+                    <ul class="tooltip-links">
+                      <li><a href="#">Status Network Whitepaper</a></li>
+                      <li><a href="#">MyEtherWallet Instructions</a></li>
+                      <li><a href="#">Mist Instructions</a></li>
+                      <li><a href="#">Parity Instructions</a></li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-
         </div>
-      </div>
-      </div>
 
-      <div class="footer">
-        <div class="footer-inner">
-          <div class="footer-logo-wrap">
-            <div class="footer-logo-wrap__inner">
-              <div class="footer-logo"></div>
-              <div class="footer-address">Status Research & Development Gmbh<br/>Baarerstrasse 10<br/>Zug, Switzerland</div>
+        <div class="slide slide--three">
+          <div class="slide__inner">
+            <div class="sections">
+              <div class="section-item section-item-left">
+                <div class="phones-section">
+                  <div class="phones">
+                    <div class="phone-wrap phone-wrap--iphone">
+                      <div class="phone phone--iphone the-iphone">
+                        <div class="the-iphone-dot"></div>
+                        <div class="the-iphone-line"></div>
+                        <div class="the-iphone-screen"></div>
+                        <div class="the-iphone-button"></div>
+                      </div>
+                    </div>
+
+                    <div class="phone-wrap phone-wrap--android">
+                      <div class="phone phone--android the-android">
+                        <div class="the-android-dot"></div>
+                        <div class="the-android-line"></div>
+                        <div class="the-android-screen"></div>
+                        <div class="the-android-button"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="section-item section-item-right">
+                <div class="text-section">
+                  <h2>What is Status?</h2>
+                  <div class="text">
+                    <p>We’re paving a path towards mass-adoption of Ethereum. Status is the first, and currently the only, mobile Ethereum client built entirely on peer-to-peer technologies. </p>
+                    <p>Status combines a messenger, web 3.0 browser, and a wallet to build a gateway for everyday smartphone users to begin using dApps, and a simple way for dApp developers to reach new users.</p>
+                    <p>If you’d like to try our alpha, Android users try it right now. iOS users need to request an invite via Apple TestFlight from our homepage.</p>
+                    <div class="app-buttons">
+                      <a class="app-button app-button--android" href="https://test.status.im/">
+                        <span class="app-button__title">Download Alpha</span>
+                        <span class="app-button__platform">Android</span>
+                        <span class="app-button__icon"></span>
+                      </a>
+                      <a class="app-button app-button--ios" href="http://slack.status.im/">
+                        <span class="app-button__title">Request TestFlight</span>
+                        <span class="app-button__platform">IOS</span>
+                        <span class="app-button__icon"></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="footer-table">
-            <div class="footer-table__column">
-              <h4 class="footer-header">Social links</h4>
-              <ul class="footer-list">
-                <li class="footer-link footer-link--fb"><a href="https://www.facebook.com/ethstatus" target="_blank"><span class="footer-icon"></span><span class="footer-link-label">Facebook</span></a></li>
-                <li class="footer-link footer-link--tw"><a href="https://twitter.com/ethstatus" target="_blank"><span class="footer-icon"></span><span class="footer-link-label">Twitter</span></a></li>
-                <li class="footer-link footer-link--sl"><a href="http://slack.status.im/" target="_blank"><span class="footer-icon"></span><span class="footer-link-label">Slack</span></a></li>
-                <li class="footer-link footer-link--gh"><a href="https://github.com/status-im" target="_blank"><span class="footer-icon"></span><span class="footer-link-label">Github</span></a></li>
-                <li class="footer-link footer-link--rd"><a href="https://www.reddit.com/r/statusim/" target="_blank"><span class="footer-icon"></span><span class="footer-link-label">Reddit</span></a></li>
-                <li class="footer-link footer-link--yt"><a href="https://www.youtube.com/channel/UCFzdJTUdzqyX4e9dOW7UpPQ/" target="_blank"><span class="footer-icon"></span><span class="footer-link-label">YouTube</span></a></li>
-              </ul>
+        </div>
+
+        <div class="slide slide--four">
+          <div class="slide__inner">
+            <div class="sections">
+              <div class="section-item section-item-left">
+                <div class="text-section">
+                  <h2>The Status Network Token</h2>
+                  <div class="text">
+                    <p>The Status Network Token ('SNT') is created during the contribution period, and serves as a crucial part of the Status Application. Our objective is to create a Users-as-Stakeholders network; where the economic incentives of the platform
+                      is to serve the users on the platform.</p>
+                    <p>Given Status is a generalized platform, and possesses a broad range of use-cases and native-DApps that in and of themselves could be powered by a token, SNT takes a modular approach, and serves a number of core functions across the
+                      network.
+                    </p>
+                    <p>SNT forms the the foundation of our content discovery and ranking systems for Status dApps, powers our network-level Acquisition Engine, is used for our Governance & Proposal system. These are outlined in more depth in our Whitepaper.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="section-item section-item-right section-item-dots">
+                <div class="dot-wrap">
+                  <div class="dot dot--purple">
+                    <div class="dot-icon"></div>
+                  </div>
+                </div>
+                <div class="dot-wrap">
+                  <div class="dot dot--pink">
+                    <div class="dot-icon"></div>
+                  </div>
+                </div>
+                <div class="dot-wrap">
+                  <div class="dot dot--green">
+                    <div class="dot-icon"></div>
+                  </div>
+                </div>
+                <div class="dot-wrap">
+                  <div class="dot dot--blue">
+                    <div class="dot-icon"></div>
+                  </div>
+                </div>
+                <div class="dot-wrap">
+                  <div class="dot dot--pink">
+                    <div class="dot-icon"></div>
+                  </div>
+                </div>
+                <div class="dot-wrap">
+                  <div class="dot dot--purple">
+                    <div class="dot-icon"></div>
+                  </div>
+                </div>
+                <div class="dot-wrap">
+                  <div class="dot dot--green">
+                    <div class="dot-icon"></div>
+                  </div>
+                </div>
+                <div class="dot-wrap">
+                  <div class="dot dot--blue">
+                    <div class="dot-icon"></div>
+                  </div>
+                </div>
+                <div class="dot-wrap">
+                  <div class="dot dot--purple">
+                    <div class="dot-icon"></div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="footer-table__column">
-              <h4 class="footer-header">More</h4>
-              <ul class="footer-list">
-                <li class="footer-link"><a href="https://wiki.status.im" target="_blank">Status Wiki</a></li>
-                <li class="footer-link"><a href="https://blog.status.im/?gi=73d6676925e9" target="_blank">Status Blog</a></li>
-                <li class="footer-link"><a href="https://status.im/jobs.html" target="_blank">Jobs</a></li>
-              </ul>
+          </div>
+        </div>
+
+        <div class="slide slide--five">
+          <div class="slide__inner">
+            <div class="email-section">
+              <div class="email-section__text">
+                <h2>Get Notified</h2>
+                <div class="text">
+                  <p>If you’d like to receive updates on the Contribution Period and the launch of the Status Network, please subscribe</p>
+                </div>
+              </div>
+              <div class="email-form">
+                <!-- Mailchimp -->
+                <form action="https://status.us13.list-manage.com/subscribe/post?u=d0c1a0be2adff281b52e27a7f&amp;id=78f032de8b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                  <div class="email-form__inner">
+                    <input type="email" value="" name="EMAIL" class="required email-input mce-EMAIL email-form__input email-form__input--email" placeholder="Enter your email">
+                    <input type="submit" value="GET UPDATES" name="subscribe" class="button email-form__input email-form__input--sumbit mc-embedded-subscribe button email-button">
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_d0c1a0be2adff281b52e27a7f_09e2d9ae07" tabindex="-1" value=""></div>
+                  </div>
+                  <div id="mce-responses" class="email-form__responces">
+                    <div class="response email-form__error-message" id="mce-error-response"></div>
+                    <div class="email-form__success-message response" id="mce-success-response"></div>
+                  </div>
+                </form>
+                <!-- End Mailchimp -->
+              </div>
             </div>
-            <div class="footer-table__column">
-              <h4 class="footer-header">Language</h4>
-              <ul class="footer-list">
-                <li class="footer-link">
-                  <select class="language-switcher" name="lang">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo-wrap">
+        <div class="footer-logo-wrap__inner">
+          <div class="footer-logo"></div>
+          <div class="footer-address">Status Research & Development Gmbh<br/>Baarerstrasse 10<br/>Zug, Switzerland</div>
+        </div>
+      </div>
+      <div class="footer-table">
+        <div class="footer-table__column">
+          <h4 class="footer-header">Social links</h4>
+          <ul class="footer-list">
+            <li class="footer-link footer-link--fb"><a href="https://www.facebook.com/ethstatus" target="_blank"><span class="footer-icon"></span><span class="footer-link-label">Facebook</span></a></li>
+            <li class="footer-link footer-link--tw"><a href="https://twitter.com/ethstatus" target="_blank"><span class="footer-icon"></span><span class="footer-link-label">Twitter</span></a></li>
+            <li class="footer-link footer-link--sl"><a href="http://slack.status.im/" target="_blank"><span class="footer-icon"></span><span class="footer-link-label">Slack</span></a></li>
+            <li class="footer-link footer-link--gh"><a href="https://github.com/status-im" target="_blank"><span class="footer-icon"></span><span class="footer-link-label">Github</span></a></li>
+            <li class="footer-link footer-link--rd"><a href="https://www.reddit.com/r/statusim/" target="_blank"><span class="footer-icon"></span><span class="footer-link-label">Reddit</span></a></li>
+            <li class="footer-link footer-link--yt"><a href="https://www.youtube.com/channel/UCFzdJTUdzqyX4e9dOW7UpPQ/" target="_blank"><span class="footer-icon"></span><span class="footer-link-label">YouTube</span></a></li>
+          </ul>
+        </div>
+        <div class="footer-table__column">
+          <h4 class="footer-header">More</h4>
+          <ul class="footer-list">
+            <li class="footer-link"><a href="https://wiki.status.im" target="_blank">Status Wiki</a></li>
+            <li class="footer-link"><a href="https://blog.status.im/?gi=73d6676925e9" target="_blank">Status Blog</a></li>
+            <li class="footer-link"><a href="https://status.im/jobs.html" target="_blank">Jobs</a></li>
+          </ul>
+        </div>
+        <div class="footer-table__column">
+          <h4 class="footer-header">Language</h4>
+          <ul class="footer-list">
+            <li class="footer-link">
+              <select class="language-switcher" name="lang">
                     <option value="en">English</option>
                   </select>
-                </li>
-              </ul>
-            </div>
-          </div>
+            </li>
+          </ul>
         </div>
       </div>
+    </div>
+  </div>
 
 
-    <script src="js/app.js?v=67f3ba1"></script>
-    <script src="js/mc-validate.js?v=207d097"></script>
-    <!-- Google Analytics -->
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  <script src="js/app.js?v=67f3ba1"></script>
+  <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+  <script type="text/javascript">
+    (function($) {
+      window.fnames = new Array();
+      window.ftypes = new Array();
+      fnames[0] = 'EMAIL';
+      ftypes[0] = 'email';
+      fnames[1] = 'FNAME';
+      ftypes[1] = 'text';
+      fnames[2] = 'LNAME';
+      ftypes[2] = 'text';
+    }(jQuery));
+    var $mcj = jQuery.noConflict(true);
+  </script>
+  <!-- Google Analytics -->
+  <script>
+    (function(i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function() {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-      try {
-        ga('create', 'UA-79146816-1', 'auto');
-        ga('send', 'pageview');
-      } catch(e) {}
-    </script>
-    <!-- /Google Analytics -->
-    </body>
+    try {
+      ga('create', 'UA-79146816-1', 'auto');
+      ga('send', 'pageview');
+    } catch (e) {}
+  </script>
+  <!-- /Google Analytics -->
+</body>
+
 </html>
