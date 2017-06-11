@@ -20,16 +20,16 @@
   <link rel="mask-icon" href="img/new-site/logo-mask.svg" color="4360DF">
 
   <!-- favicon.ico in the root directory -->
-  <link rel="stylesheet" href="css/main.css?v=fbdac7d">
+  <link rel="stylesheet" href="css/main.css?v=164c297">
 
   <meta property="og:title" content="Status, a Mobile Ethereum OS" />
 </head>
 
 <body>
 
-  <div class="overlay">
+  <div class="overlay overlay--agreement">
     <div class="popup popup--agreement">
-        <a class="popup__close"></a>
+        <a class="popup__button popup__button--close"></a>
         <div class="popup__steps">Step 1 of 2</div>
         <h4 class="popup__title">Participate agreement</h4>
         <div class="popup__text">The Contribution Period will start on June 17th 2017 at 2pm GMT (UTC+0) and will endd</div>
@@ -60,22 +60,24 @@
             </div>
           </div>
         </form>
+      </div>
     </div>
-    <div class="popup popup--address">
-        <a class="popup__close"></a>
-        <div class="popup__steps">Step 2 of 2</div>
-        <h4 class="popup__title">Smart contract address</h4>
+    <div class="overlay overlay--address">
+      <div class="popup popup--address">
+          <a class="popup__button popup__button--close"></a>
+          <div class="popup__steps">Step 2 of 2</div>
+          <h4 class="popup__title">Smart contract address</h4>
 
-        <div class="address-wrap">
-          1234DFG706c2a3334dE9664074C89009f16E2cC981
-        </div>
+          <div class="address-wrap">
+            1234DFG706c2a3334dE9664074C89009f16E2cC981
+          </div>
 
-        <div class="popup__text">
-          Send ETH to the contract above using Mist, Metamask, iMToken, Parity or MyEtherWallet.
-          <span class="text-warning">Do not send ETH from exchanges like Coinbase, Polo or use Jaxx</span>
-        </div>
+          <div class="popup__text">
+            Send ETH to the contract above using Mist, Metamask, iMToken, Parity or MyEtherWallet.
+            <span class="text-warning">Do not send ETH from exchanges like Coinbase, Polo or use Jaxx</span>
+          </div>
+      </div>
     </div>
-  </div>
 
   <div class="cookie-popup">
     <div class="cookie-popup__inner">
@@ -379,7 +381,7 @@
   </div>
 
 
-  <script src="js/app.js?v=dfc3af0"></script>
+  <script src="js/app.js?v=8f8b20b"></script>
   <script src="js/mc-validate.js?v=207d097"></script>
 
   <!-- Google Analytics -->
