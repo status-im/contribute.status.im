@@ -1,6 +1,0 @@
-.address__column.address__column--third{
-	width:33.3%
-}
-.address__column.address__column--third:not(:first-child){
-	border-left:1px solid #e7ecee
-}
