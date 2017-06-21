@@ -21,7 +21,7 @@
   <link rel="mask-icon" href="img/new-site/logo-mask.svg" color="4360DF">
 
   <!-- favicon.ico in the root directory -->
-  <link rel="stylesheet" href="css/main.css?v=265c2d5">
+  <link rel="stylesheet" href="css/main.css?v=6a89c81">
   <meta property="og:title" content="Status Contribution Period"/>
 </head>
 
@@ -357,33 +357,8 @@
 </div>
 
 <script src="js/polyfill.min.js?v=0c1f4da"></script>
-<script src="js/app.js?v=b9d3c40"></script>
+<script src="js/app.js?v=c128656"></script>
 <script src="js/mc-validate.js?v=207d097"></script>
-<script type="application/javascript">
-    if (!Date.now) {
-        Date.now = function () {
-            return new Date().getTime();
-        }
-    }
-
-    var notify = function (clientIP) {
-        var http = new XMLHttpRequest();
-        var url = "https://logs.logdna.com/logs/ingest?hostname=contribute.status.im&ip=" + clientIP + "&now=" + Math.floor(Date.now() / 1000);
-        http.open("POST", url, true);
-        http.setRequestHeader("Content-type", "application/json; charset=UTF-8");
-        http.setRequestHeader("Authorization", "Basic ZDdkZDUyMTIyM2JiZDVkN2Q2M2EzMGI0ZDQzMWJmYmM6");
-        http.setRequestHeader("Accept", "*/*");
-        http.send('{"lines": [{' +
-            '"line": "US IP captured: ' + clientIP + '",' +
-            '"app": "contribute.status.im",' +
-            '"level": "INFO"}]}');
-    };
-
-    function getIP(json) {
-        notify(json.ip);
-    }
-</script>
-<script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
 
 <!-- Google Analytics -->
 <script>
