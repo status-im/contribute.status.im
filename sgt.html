@@ -21,7 +21,7 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
 
   <!-- favicon.ico in the root directory -->
-  <link rel="stylesheet" href="css/main.css?v=2c1f56b">
+  <link rel="stylesheet" href="css/main.css?v=e8dc0f0">
   <meta property="og:title" content="Status Contribution Period" />
 </head>
 
@@ -85,8 +85,7 @@
               <h2>How can I calculate the exchange rate for SGT to SNT?</h2>
               <div class="text">
                 <p>Inspect the <strong>second token transfer</strong> from the <a href="https://etherscan.io/tx/0x43c712494be83b5f0e428a3ac27ae2f940f0fe458aa116d42a2ee88a737287b9" target="_blank">finalize() transaction</a> at the end of the Contribution Period. You’ll see that the Total SNT allocated for SGT exchanging is <strong>471,505,389.187865805561407178</strong>. </p>
-                <p>Next, check out the <strong>Token Total Supply</strong> of the <a href="https://etherscan.io/token/0xd248b0d48e44aaf9c49aea0312be7e13a6dc1468" target="_blank">SGT token</a>. Total SGT issued is <strong>34,644,701.3</strong>. </p>
-                <p>The portion of allocated SNT for each SGT token holder can be calculated as: 71505389.187865805561407178 ÷ 34644701.3 = <strong>13.6097403497563 SNT per SGT</strong></p>
+                <p>Next, check out the <strong>Token Total Supply</strong> of the <a href="https://etherscan.io/token/0xd248b0d48e44aaf9c49aea0312be7e13a6dc1468" target="_blank">SGT token</a>. Total SGT issued is <strong>34,644,701.3</strong>. The portion of allocated SNT for each SGT token holder can be calculated as: 71505389.187865805561407178 ÷ 34644701.3 = <strong>13.6097403497563 SNT per SGT</strong>.</p>
                 <p>You can also refer to our <a href="https://github.com/status-im/status-network-token/blob/master/contracts/StatusContribution.sol#L324" target="_blank">Status Contribution contract</a> (starting line 324) for more details on the calculations.</p>
               </div>
 
@@ -112,9 +111,10 @@
                 <p>Open your web browser and navigate to <a href="http://myetherwallet.com" target="_blank">http://myetherwallet.com</a>. Select the <strong>Send Ether & Tokens</strong> tab. Import your wallet with SGT using any one of the methods available. Copy this Exchanger smart contract address:</p>
                 <p class="mono">0x20a7b20b9c213e6705c72a4216fdbc628a29d06c</p>
                 <p>Paste the address into the <strong>To Address</strong> field. In the <strong>Amount to Send</strong> field input <strong>0</strong>, and make sure the dropdown on the right-side of the field has <strong>ETH</strong> selected. </p>
-                <h5>Note</h5>
-                <p class="note">That’s right! You will send a 0 ETH transaction. If you’ve never done this before, now’s the time to try. You will need to have a small amount of ether in your wallet though to cover the gas in this transaction. You will see a popup bar warning in red along the bottom of the page. You can safely disregard the warning.</p>
-
+                <div class="note">
+                  <h5>Note</h5>
+                  <p>That’s right! You will send a 0 ETH transaction. If you’ve never done this before, now’s the time to try. You will need to have a small amount of ether in your wallet though to cover the gas in this transaction. You will see a popup bar warning in red along the bottom of the page. You can safely disregard the warning.</p>
+                </div>
                 <p>In the <strong>Gas Limit</strong> field, input <strong>200,000</strong>. You can optionally control the Gas Price in the top bar, but it is okay to leave this as the default 25 Gwei.</p>
                 <p>Click the <strong>+Advanced: Add Data</strong> link. In the <strong>Data</strong> field, input <strong>0xe5225381</strong>.</p>
                 <p>Now double check that you’ve entered the correct values for <strong>To Address</strong>, <strong>Amount to Send</strong>, <strong>Gas Limit</strong>, and <strong>Data</strong>.</p>
