@@ -1,0 +1,205 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <title>Status Contribution Period</title>
+  <meta name="description" content="Status is an interface to access Ethereum, built for Android & iOS. Enjoy encrypted messaging, a cryptocurrency wallet, and seamless access to DApps.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="icon" type="image/png" href="img/new-site/logo-32.png?v=516c1cd" sizes="32x32" />
+  <link rel="icon" type="image/png" href="img/new-site/logo-16.png?v=5108317" sizes="16x16" />
+
+  <link rel="apple-touch-icon" href="img/new-site/apple-touch-icon-1024.png?v=464c5b1">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/new-site/apple-touch-icon-76.png?v=13dde43">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/new-site/apple-touch-icon-120.png?v=e3d71d5">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/new-site/apple-touch-icon-152.png?v=1353ddd">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/new-site/apple-touch-icon-180.png?v=401931a">
+  <link rel="mask-icon" href="img/new-site/logo-mask.svg" color="4360DF">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+
+  <!-- favicon.ico in the root directory -->
+  <link rel="stylesheet" href="css/main.css?v=2c1f56b">
+  <meta property="og:title" content="Status Contribution Period" />
+</head>
+
+<body class="body-page body-page--sgt">
+
+  <div class="container-wrap">
+    <div class="container">
+      <div class="slides">
+        <div class="slide slide--one">
+          <div class="slide__inner">
+            <div class="header">
+              <div class="header__inner">
+                <div class="header-section header-section--left">
+                  <a class="logo" href="/">
+                    <span class="logo__icon"></span>
+                  </a>
+                  <div class="nav">
+                    <a class="nav__item" target="_blank" href="https://status.im/">Status Home</a>
+                    <a class="nav__item" target="_blank" href="https://status.im/whitepaper.pdf">Whitepaper</a>
+                  </div>
+                </div>
+                <div class="header-section header-section--right">
+                  <div class="nav">
+                    <a class="nav__item" target="_blank" href="https://twitter.com/ethstatus">Twitter</a>
+                    <a class="nav__item" target="_blank" href="https://www.reddit.com/r/statusim/">Reddit</a>
+                    <a class="nav__item" target="_blank" href="https://github.com/status-im">Github</a>
+                    <a class="nav__item" target="_blank" href="https://www.facebook.com/ethstatus/?pnref=lhc">Facebook</a>
+                </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="calculator-wrap">
+              <div class="calculator">
+                <!-- h2 class="calculator__title">Status Genesis Token</h2-->
+                <div class="calculator__body">
+                  <p>SGT is an ERC20 token on Ethereum’s Mainnet. We issued them to early adopters and community members. SGT was explained in the <a href="https://blog.status.im/encoding-the-status-genesis-block-d73d287a750" target="_blank">Encoding The Status Genesis Block</a> blog post and the exchange of SGT to SNT was explained in the <a href="https://blog.status.im/distribution-dynamic-ceilings-e2f427f5cca" target="_blank">Dynamic Ceilings</a> blog post.</p>
+                </div>
+                <div class="calculator__widget">
+                  <div class="calculator__widget__equals">=</div>
+                  <div class="calculator__widget__input-wrap">
+                    <div class="input__inner">
+                      <input type="text" class="calculator__widget__input" value="1" />
+                    </div>
+                    <div class="input-label">SGT</div>
+                    <div class="input-desctiption"></div>
+                  </div>
+                  <div class="calculator__widget__output-wrap">
+                    <div class="input__inner input__inner--disabled">
+                      <input type="text" class="calculator__widget__input calculator__widget__input--output calculator__widget__input--disabled" disabled value="13.6097403497563" />
+                    </div>
+                    <div class="input-label">SNT</div>
+                    <div class="input-desctiption"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="text-wrap">
+              <h2>How can I calculate the exchange rate for SGT to SNT?</h2>
+              <div class="text">
+                <p>Inspect the <strong>second token transfer</strong> from the <a href="https://etherscan.io/tx/0x43c712494be83b5f0e428a3ac27ae2f940f0fe458aa116d42a2ee88a737287b9" target="_blank">finalize() transaction</a> at the end of the Contribution Period. You’ll see that the Total SNT allocated for SGT exchanging is <strong>471,505,389.187865805561407178</strong>. </p>
+                <p>Next, check out the <strong>Token Total Supply</strong> of the <a href="https://etherscan.io/token/0xd248b0d48e44aaf9c49aea0312be7e13a6dc1468" target="_blank">SGT token</a>. Total SGT issued is <strong>34,644,701.3</strong>. </p>
+                <p>The portion of allocated SNT for each SGT token holder can be calculated as: 71505389.187865805561407178 ÷ 34644701.3 = <strong>13.6097403497563 SNT per SGT</strong></p>
+                <p>You can also refer to our <a href="https://github.com/status-im/status-network-token/blob/master/contracts/StatusContribution.sol#L324" target="_blank">Status Contribution contract</a> (starting line 324) for more details on the calculations.</p>
+              </div>
+
+              <h2>How soon can I redeem my SGT for SNT?</h2>
+              <div class="text">
+                <p>You can exchange your SGT for SNT immediately after the Contribution Period finishes.</p>
+              </div>
+
+              <h2>How much time do I have to convert SGT to SNT?</h2>
+              <div class="text">
+                <p>As seen in section 2.2 of our contract: “The Activation of SGT will be possible for a duration of 90 days after the instructions according to para 3 have been published. Status GmbH may extend this period at its sole discretion."</p>
+              </div>
+
+              <h2>How do I redeem SGT for SNT?</h2>
+              <div class="text">
+                <p>For our SGT token holders, here are the basic instructions on how to redeem your SGT for SNT: Prepare a <strong>0 ETH</strong> transaction to send to the Exchanger smart contract address: </p>
+                <p class="mono">0x20a7b20b9c213e6705c72a4216fdbc628a29d06c</p>
+                <p>You’ll need to use a <strong>Gas Limit</strong> of <strong>200,000</strong> and a <strong>Data</strong> value of <strong>0xe5225381</strong>. The Data value will call <strong>collect()</strong> on the contract. The easiest way to do that is to use MyEtherWallet. In the next section, you’ll learn how to send the transaction to the Exchanger from MyEtherWallet and then verify the transaction with Etherscan.</p>
+              </div>
+
+              <h2>MyEtherWallet (MEW) instructions</h2>
+              <div class="text">
+                <p>Open your web browser and navigate to <a href="http://myetherwallet.com" target="_blank">http://myetherwallet.com</a>. Select the <strong>Send Ether & Tokens</strong> tab. Import your wallet with SGT using any one of the methods available. Copy this Exchanger smart contract address:</p>
+                <p class="mono">0x20a7b20b9c213e6705c72a4216fdbc628a29d06c</p>
+                <p>Paste the address into the <strong>To Address</strong> field. In the <strong>Amount to Send</strong> field input <strong>0</strong>, and make sure the dropdown on the right-side of the field has <strong>ETH</strong> selected. </p>
+                <h5>Note</h5>
+                <p class="note">That’s right! You will send a 0 ETH transaction. If you’ve never done this before, now’s the time to try. You will need to have a small amount of ether in your wallet though to cover the gas in this transaction. You will see a popup bar warning in red along the bottom of the page. You can safely disregard the warning.</p>
+
+                <p>In the <strong>Gas Limit</strong> field, input <strong>200,000</strong>. You can optionally control the Gas Price in the top bar, but it is okay to leave this as the default 25 Gwei.</p>
+                <p>Click the <strong>+Advanced: Add Data</strong> link. In the <strong>Data</strong> field, input <strong>0xe5225381</strong>.</p>
+                <p>Now double check that you’ve entered the correct values for <strong>To Address</strong>, <strong>Amount to Send</strong>, <strong>Gas Limit</strong>, and <strong>Data</strong>.</p>
+                <p>Once you’re ready to pull the trigger, click <strong>Generate Transaction</strong>. MyEtherWallet will show you the web3 call. Click <strong>Send Transaction</strong>.</p>
+                <p>Once the transaction is pushed to the network, a success bar will pop over the bottom of the screen. Click <strong>Verify Transaction</strong> to see your transaction on Etherscan. A new tab will open in your browser. </p>
+                <p>On Etherscan, at first the transaction will show as Pending. Once the transaction finishes, you can verify the contract action in the <strong>To</strong> row. The row will show:</p>
+
+                <p class="mono">[Amount] StatusNetwork TOKEN TRANSFER From 0x20a7b20b9c213e6705c72a4216fdbc628a29d06c to [0x… Your address]</p>
+
+                <p>Now look immediately above the <strong>To</strong> row and locate the <strong>From</strong> row. Click the link in the <strong>From</strong> row for <strong>[0x… your address]</strong>. </p>
+                <p>On the page new page that loads, you see all of the transactions for your address. Click on the <strong>Token Transfers</strong> tab. On this page, you can see the date when both of your token transfers took place: <strong>StatusGenesis</strong> and <strong>StatusNetwork</strong>.</p>
+                <p>Congratulations on exchanging your SGT for SNT. Thank you for being an early community supporter. We look forward to building the future of Ethereum along with you.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo-wrap">
+        <div class="footer-logo-wrap__inner">
+          <div class="footer-logo"></div>
+          <div class="footer-address">Status Research & Development GmbH<br/>Baarerstrasse 10<br/>Zug, Switzerland</div>
+        </div>
+      </div>
+      <div class="footer-table">
+        <div class="footer-table__column">
+          <h4 class="footer-header">Social links</h4>
+          <ul class="footer-list">
+            <li class="footer-link footer-link--fb"><a href="https://www.facebook.com/ethstatus" target="_blank"><span class="footer-icon"></span><span class="footer-link-label">Facebook</span></a></li>
+            <li class="footer-link footer-link--tw"><a href="https://twitter.com/ethstatus" target="_blank"><span class="footer-icon"></span><span class="footer-link-label">Twitter</span></a></li>
+            <li class="footer-link footer-link--gh"><a href="https://github.com/status-im" target="_blank"><span class="footer-icon"></span><span class="footer-link-label">Github</span></a></li>
+            <li class="footer-link footer-link--rd"><a href="https://www.reddit.com/r/statusim/" target="_blank"><span class="footer-icon"></span><span class="footer-link-label">Reddit</span></a></li>
+            <li class="footer-link footer-link--yt"><a href="https://www.youtube.com/channel/UCFzdJTUdzqyX4e9dOW7UpPQ/" target="_blank"><span class="footer-icon"></span><span class="footer-link-label">YouTube</span></a></li>
+          </ul>
+        </div>
+        <div class="footer-table__column">
+          <h4 class="footer-header">More</h4>
+          <ul class="footer-list">
+            <li class="footer-link"><a href="https://wiki.status.im" target="_blank">Status Wiki</a></li>
+            <li class="footer-link"><a href="https://blog.status.im/?gi=73d6676925e9" target="_blank">Status Blog</a></li>
+            <li class="footer-link"><a href="https://status.im/jobs.html" target="_blank">Jobs</a></li>
+          </ul>
+        </div>
+        <div class="footer-table__column">
+          <h4 class="footer-header">Language</h4>
+          <ul class="footer-list">
+            <li class="footer-link">
+              <select class="language-switcher" name="lang">
+                    <option value="en">English</option>
+                  </select>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/polyfill.min.js?v=0c1f4da"></script>
+  <script src="js/calculator.js?v=b2837e4"></script>
+
+  <!-- Google Analytics -->
+  <script>
+    (function(i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function() {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    try {
+      ga('create', 'UA-79146816-1', 'auto');
+      ga('send', 'pageview');
+    } catch (e) {}
+  </script>
+  <!-- /Google Analytics -->
+</body>
+
+</html>
